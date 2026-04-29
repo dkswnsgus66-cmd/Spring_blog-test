@@ -17,6 +17,7 @@ public class BoardRequest {
         // 편의 기능 설계 가능
         // DTO 에서 Entity로 변환해주는 편의 메서드
         public Board toEntity() {
+
             return Board.builder()
 //                    .username(username)
                     .title(title)
@@ -33,6 +34,8 @@ public class BoardRequest {
         private String content;
 
         public Board toEntity() {
+
+
             return Board.builder()
 //                    .username(username)
                     .title(title)
